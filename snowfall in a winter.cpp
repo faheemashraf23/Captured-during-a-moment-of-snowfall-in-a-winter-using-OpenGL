@@ -890,6 +890,123 @@ void Draw()
    glVertex2i(48, -31);
    glEnd();
 
+
+   //........................................End............................................
+
+
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(-2, -64);
+   glVertex2i(-2, -44);
+   glVertex2i(-3, -44);
+   glVertex2i(-3, -64);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(37, -64);
+   glVertex2i(37, -44);
+   glVertex2i(36, -44);
+   glVertex2i(36, -64);
+   glEnd();
+
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(39, -44);
+   glVertex2i(39, -43);
+   glVertex2i(-5, -43);
+   glVertex2i(-5, -44);
+   glEnd();
+   glColor3f(1, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(39, -46);
+   glVertex2i(39, -44);
+   glVertex2i(-5, -44);
+   glVertex2i(-5, -46);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(39, -46.8);
+   glVertex2i(39, -47);
+   glVertex2i(-5, -47);
+   glVertex2i(-5, -46.8);
+   glEnd();
+   glColor3f(1, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(39, -49);
+   glVertex2i(39, -47);
+   glVertex2i(-5, -47);
+   glVertex2i(-5, -49);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(39, -49.8);
+   glVertex2i(39, -50);
+   glVertex2i(-5, -50);
+   glVertex2i(-5, -49.8);
+   glEnd();
+   glColor3f(1, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(39, -52);
+   glVertex2i(39, -50);
+   glVertex2i(-5, -50);
+   glVertex2i(-5, -52);
+   glEnd();
+
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(-2, -54);
+   glVertex2i(-4, -54);
+   glVertex2i(-7, -58);
+   glVertex2i(-5, -58);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(-5, -66);
+   glVertex2i(-5, -58);
+   glVertex2i(-7, -58);
+   glVertex2i(-7, -66);
+   glEnd();
+
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(37, -54);
+   glVertex2i(35, -54);
+   glVertex2i(40, -58);
+   glVertex2i(42, -58);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(42, -66);
+   glVertex2i(42, -58);
+   glVertex2i(40, -58);
+   glVertex2i(40, -66);
+   glEnd();
+
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(42, -58);
+   glVertex2i(37, -54);
+   glVertex2i(-4, -54);
+   glVertex2i(-8, -58);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(42, -60);
+   glVertex2i(42, -58);
+   glVertex2i(-8, -58);
+   glVertex2i(-8, -60);
+   glEnd();
+
+
+
+
+
+
+
+
+
+
+
 //........................................End............................................
 
    //Snow Tesla car
@@ -2776,6 +2893,11 @@ glColor3f(1, 1, 1);
    glVertex2i(-2, g-76);
    glVertex2i(-3, g-75);
    glEnd();
+
+
+
+
+
 
 
 //........................................End............................................

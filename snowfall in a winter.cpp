@@ -9,6 +9,7 @@ float a=40.0;
 float d=100.0;
 float f=40.0;
 float g=40.0;
+float h=10.0;
 void init(void)
 {
   glClearColor(0.0,1.0,1.0,1.0); //GLfloat red,green,blue,alpha initial value 0 alpha values used by glclear to clear the color buffers
@@ -2918,6 +2919,36 @@ glColor3f(1, 1, 1);
    glVertex2i(-2, g-76);
    glVertex2i(-3, g-75);
    glEnd();
+//........................................End............................................
+  //2nd Car
+   glColor3f(1, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(h+12, 27);
+   glVertex2i(h+4, 29);
+   glVertex2i(h, 25);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(h+11, 27);
+   glVertex2i(h+4, 28);
+   glVertex2i(h+1, 25);
+   glEnd();
+   glColor3f(1, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(h+13, 25);
+   glVertex2i(h+12, 27);
+   glVertex2i(h, 25);
+   glVertex2i(h, 23);
+   glEnd();
+   glColor3f(0, 0, 0);
+    circle(1.5, 1.5, h+3, 24);
+    circle(1.5, 1.5, h+9, 25);
+    glColor3f(1, 1, 1);
+    circle(1, 1, h+3, 24);
+    circle(1, 1, h+9, 25);
+    glColor3f(0, 0, 0);
+    circle(0.5, 0.5, h+3, 24);
+    circle(0.5, 0.5, h+9, 25);
 
 //........................................End............................................
 
@@ -2956,6 +2987,11 @@ if(f>=-100)
      p=p+0.055;
    else
      p=-100;
+// Car 02
+if(h<=33)
+     h=h+0.020;
+   else
+     h=33;
 
 // Cloud 01
 if(a<=100)

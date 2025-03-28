@@ -9,7 +9,6 @@ float a=40.0;
 float d=100.0;
 float f=40.0;
 float g=40.0;
-float h=10.0;
 void init(void)
 {
   glClearColor(0.0,1.0,1.0,1.0); //GLfloat red,green,blue,alpha initial value 0 alpha values used by glclear to clear the color buffers
@@ -37,8 +36,6 @@ void circle(GLfloat rx, GLfloat ry, GLfloat cx, GLfloat cy)
 void Draw()
 {
  glClear(GL_COLOR_BUFFER_BIT);
-
-
 
 //........................................End............................................
 // snow road 01
@@ -1021,7 +1018,39 @@ void Draw()
    glVertex2f(p+40,-70);
    glVertex2f(p+1,-70);
 
+   glColor3f(0,0,0);
+   glBegin(GL_QUADS);
+   glVertex2f(p,-66);
+   glVertex2f(p+40,-66);
+   glVertex2f(p+40,-67);
+   glVertex2f(p,-67);
    glEnd();
+
+   glColor3f(0,0,0);
+   glBegin(GL_QUADS);
+   glVertex2f(p,-64.5);
+   glVertex2f(p+40,-64.5);
+   glVertex2f(p+40,-65.5);
+   glVertex2f(p,-65.5);
+   glEnd();
+
+   glColor3f(1,1,0);
+   glBegin(GL_QUADS);
+   glVertex2f(p+39,-66);
+   glVertex2f(p+40,-66);
+   glVertex2f(p+40,-68);
+   glVertex2f(p+39,-68);
+   glEnd();
+
+   glColor3f(1,1,0);
+   glBegin(GL_QUADS);
+   glVertex2f(p+39,-66);
+   glVertex2f(p+60,-70);
+   glVertex2f(p+55,-72);
+   glVertex2f(p+39,-68);
+   glEnd();
+
+
     glColor3f(0, 0, 0);
     circle(4, 4, p+8, -70);
     circle(4, 4, p+32, -70);
@@ -1110,6 +1139,7 @@ glColor3f(1, 1, 1);
     circle(1, 1, -67, -46);
     glColor3f(1, 1, 0);
     circle(2, 2, -70, -48);
+
    //Snow Doll cap
    glColor3f(0, 0, 0);
    glBegin(GL_POLYGON);
@@ -1118,6 +1148,7 @@ glColor3f(1, 1, 1);
    glVertex2i(-78, -30);
    glVertex2i(-77, -42);
    glEnd();
+
    //Snow Doll right hand
    glColor3f(0, 0, 0);
    glBegin(GL_POLYGON);
@@ -1138,6 +1169,7 @@ glColor3f(1, 1, 1);
    glVertex2i(-50, -46);
    glVertex2i(-54, -52);
    glEnd();
+
    //Snow Doll left hand
    glColor3f(0, 0, 0);
    glBegin(GL_POLYGON);
@@ -1227,6 +1259,7 @@ glColor3f(1, 1, 1);
    glVertex2i(77, 22);
    glVertex2i(72, 14);
    glEnd();
+
    // Snow Tree 04
    glColor3f(0, 0, 0);
    glBegin(GL_POLYGON);
@@ -1258,6 +1291,7 @@ glColor3f(1, 1, 1);
    glVertex2i(89, 25);
    glVertex2i(85, 15);
    glEnd();
+
    // Snow Tree 05
    glColor3f(0, 0, 0);
    glBegin(GL_POLYGON);
@@ -1283,6 +1317,7 @@ glColor3f(1, 1, 1);
    glVertex2i(25, 25);
    glVertex2i(21, 15);
    glEnd();
+
    // Snow Tree 06
    glColor3f(0, 0, 0);
    glBegin(GL_POLYGON);
@@ -1314,6 +1349,7 @@ glColor3f(1, 1, 1);
    glVertex2i(13, 26);
    glVertex2i(9, 15);
    glEnd();
+
    //Snow Single House
    glColor3f(1, 1, 1);
    glBegin(GL_POLYGON);
@@ -1393,6 +1429,7 @@ glColor3f(1, 1, 1);
    glVertex2i(50, 22);
    glVertex2i(50, 18);
    glEnd();
+
    //Window 01
    glColor3f(0, 0, 0);
    glBegin(GL_POLYGON);
@@ -1416,6 +1453,7 @@ glColor3f(1, 1, 1);
    glVertex2i(36, 5);
    glVertex2i(36, 4);
    glEnd();
+
    //Window 02
    glColor3f(1, 1, 0);
    glBegin(GL_POLYGON);
@@ -1424,6 +1462,7 @@ glColor3f(1, 1, 1);
    glVertex2i(46, 10);
    glVertex2i(46, 2);
    glEnd();
+
    //Window 03
    glColor3f(1, 1, 0);
    glBegin(GL_POLYGON);
@@ -1532,6 +1571,7 @@ glColor3f(1, 1, 1);
    glVertex2i(-75, 74);
    glVertex2i(-71, 66);
    glEnd();
+
    //Snow Tree 02
    glColor3f(0, 0, 0);
    glBegin(GL_POLYGON);
@@ -1755,7 +1795,7 @@ glColor3f(1, 1, 1);
 
 //........................................End............................................
 
-glColor3f(1, 1, 1);
+   glColor3f(1, 1, 1);
    circle(10, 8, 80, -92);
    circle(14, 10, 55, -88);
    circle(14, 10, 90, -88);
@@ -1774,6 +1814,7 @@ glColor3f(1, 1, 1);
    glVertex2i(-100, -79);
    glVertex2i(-100, -100);
    glEnd();
+
   // 1st Snow Tree
    glColor3f(1, 0, 0);
    glBegin(GL_POLYGON);
@@ -2010,6 +2051,7 @@ circle(6.5, 8.5, 60, -41);
    glVertex2i(20, 68);
    glVertex2i(12, 56);
    glEnd();
+
    // Snow Mountens 02
    glColor3f(0, 0, 0);
    glBegin(GL_POLYGON);
@@ -2122,6 +2164,7 @@ circle(6.5, 8.5, 60, -41);
    glVertex2i(39, 60);
    glVertex2i(36, 52);
    glEnd();
+
    // tree 02
    glColor3f(0, 0, 0);
    glBegin(GL_POLYGON);
@@ -2141,6 +2184,7 @@ circle(6.5, 8.5, 60, -41);
    glVertex2i(49, 58);
    glVertex2i(46, 50);
    glEnd();
+
 // Tree 03
    glColor3f(0, 0, 0);
    glBegin(GL_POLYGON);
@@ -2744,6 +2788,7 @@ glColor3f(1, 1, 1);
    glVertex2i(-2, g-96);
    glVertex2i(-3, g-95);
    glEnd();
+
 // 3nd snowfall
 glColor3f(1, 1, 1);
    glBegin(GL_POLYGON);
@@ -2874,68 +2919,51 @@ glColor3f(1, 1, 1);
    glVertex2i(-3, g-75);
    glEnd();
 
-
-      //........................................End............................................
-  //2nd Car
-   glColor3f(1, 0, 0);
-   glBegin(GL_POLYGON);
-   glVertex2i(h+12, 27);
-   glVertex2i(h+4, 29);
-   glVertex2i(h, 25);
-   glEnd();
-   glColor3f(0, 0, 0);
-   glBegin(GL_POLYGON);
-   glVertex2i(h+11, 27);
-   glVertex2i(h+4, 28);
-   glVertex2i(h+1, 25);
-   glEnd();
-   glColor3f(1, 0, 0);
-   glBegin(GL_POLYGON);
-   glVertex2i(h+13, 25);
-   glVertex2i(h+12, 27);
-   glVertex2i(h, 25);
-   glVertex2i(h, 23);
-   glEnd();
-   glColor3f(0, 0, 0);
-    circle(1.5, 1.5, h+3, 24);
-    circle(1.5, 1.5, h+9, 25);
-    glColor3f(1, 1, 1);
-    circle(1, 1, h+3, 24);
-    circle(1, 1, h+9, 25);
-    glColor3f(0, 0, 0);
-    circle(0.5, 0.5, h+3, 24);
-    circle(0.5, 0.5, h+9, 25);
-
 //........................................End............................................
 
+
+
+    glColor3f(1, 1, 1);
+    circle(28 ,4, 70, 40);
+    circle(18 ,4, 50, 35);
+
+    circle(18 ,4, 65, 38);
+
+
+
+
+//........................................End............................................
+// 20 Snowfall
 if(g>=-100)
      g=g-0.020;
    else
      g=100;
 
-if(h<=33)
-     h=h+0.020;
-   else
-     h=33;
-
-
+// plen
 if(d>=-100)
      d=d-0.020;
    else
      d=100;
+
+// Penguins
 if(f>=-100)
      f=f-0.050;
    else
      f=100;
 
+// Car 01
       if(p<=100)
      p=p+0.055;
    else
      p=-100;
+
+// Cloud 01
 if(a<=100)
      a=a+0.005;
    else
      a=-100;
+
+// Cloud 02
 if(s<=100)
      s=s+0.005;
    else

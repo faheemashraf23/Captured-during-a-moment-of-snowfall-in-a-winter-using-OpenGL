@@ -381,6 +381,27 @@ void Draw()
    glVertex2i(-46, -14);
    glVertex2i(-48, -17);
    glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(-28, -14);
+   glVertex2i(-29, -13.5);
+   glVertex2i(-45, -13.5);
+   glVertex2i(-46, -14);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(-24, -17);
+   glVertex2i(-25, -16.5);
+   glVertex2i(-49, -16.5);
+   glVertex2i(-50, -17);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(-26, -21);
+   glVertex2i(-24, -19.5);
+   glVertex2i(-50, -19.5);
+   glVertex2i(-48, -21);
+   glEnd();
 
 //........................................End............................................
    //Snow road

@@ -2448,22 +2448,22 @@ circle(6.5, 8.5, 60, -41);
 
 //........................................End............................................
 // boat penguins
-   glColor3f(0, 0, 0);
+   glColor3f(1, 0, 0);
    glBegin(GL_POLYGON);
-   glVertex2i(f+28, -95);
-   glVertex2i(f+28, -92);
-   glVertex2i(f+30, -95);
+   glVertex2i(f+22, -95);
+   glVertex2i(f+22, -92);
+   glVertex2i(f+18, -95);
    glEnd();
-   glColor3f(0, 0, 0);
+   glColor3f(1, 0, 0);
    glBegin(GL_POLYGON);
-   glVertex2i(f+30, -97);
-   glVertex2i(f+30, -95);
+   glVertex2i(f+20, -97);
+   glVertex2i(f+22, -95);
    glVertex2i(f-10, -95);
-   glVertex2i(f-10, -97);
+   glVertex2i(f-8, -97);
    glEnd();
-   glColor3f(0, 0, 0);
+   glColor3f(1, 0, 0);
    glBegin(GL_POLYGON);
-   glVertex2i(f-8, -95);
+   glVertex2i(f-6, -95);
    glVertex2i(f-10, -92);
    glVertex2i(f-10, -95);
    glEnd();

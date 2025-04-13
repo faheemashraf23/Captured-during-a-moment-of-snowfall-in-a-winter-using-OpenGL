@@ -8,6 +8,10 @@ float s=80.0;
 float a=40.0;
 float d=100.0;
 float f=40.0;
+float k=60.0;
+float m=80.0;
+float n=100.0;
+float l=160.0;
 float g=40.0;
 float h=10.0;
 void init(void)
@@ -37,6 +41,8 @@ void circle(GLfloat rx, GLfloat ry, GLfloat cx, GLfloat cy)
 void Draw()
 {
  glClear(GL_COLOR_BUFFER_BIT);
+
+
 
 //........................................End............................................
 // snow road 01
@@ -2442,30 +2448,142 @@ circle(6.5, 8.5, 60, -41);
    glVertex2i(-43, 15);
    glEnd();
 
+//........................................End............................................
+  glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(100, -94.5);
+   glVertex2i(100, -94.5);
+   glVertex2i(-100, -95.5);
+   glVertex2i(-100, -94.5);
+   glEnd();
+    glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(100, -96);
+   glVertex2i(100, -95);
+   glVertex2i(-100, -96);
+   glVertex2i(-100, -96);
+   glEnd();
+//........................................End............................................
+// boat penguins
+   glColor3f(1, 1, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(k+4, -95);
+   glVertex2i(k+4, -92);
+   glVertex2i(k+8, -95);
+   glEnd();
+   glColor3f(1, 1, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(k, -95);
+   glVertex2i(k+4, -92);
+   glVertex2i(k+4, -95);
+   glEnd();
 
+// 02 penguins
+   glutPostRedisplay();
+   glColor3f(1, 1, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(k-4, -75);
+   glVertex2i(k-8, -77);
+   glVertex2i(k-4, -78);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(k+2, -76);
+   glVertex2i(k-4.5, -78);
+   glVertex2i(k-0.5, -86);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(k+2, -76);
+   glVertex2i(k-4, -78);
+   glVertex2i(k, -86);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(k+8, -86);
+   glVertex2i(k+3, -74);
+   glVertex2i(k, -86);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(k+16, -90);
+   glVertex2i(k+12, -84);
+   glVertex2i(k+6, -82);
+   glVertex2i(k+8, -86);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(k+12, -90);
+   glVertex2i(k+4, -84);
+   glVertex2i(k+4, -88);
+   glVertex2i(k+9, -93);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(k+16, -92);
+   glVertex2i(k+12, -90);
+   glVertex2i(k+9, -92);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(k+4, -84);
+   glVertex2i(k+1, -77);
+   glVertex2i(k, -86);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(k+4, -84);
+   glVertex2i(k-1, -84);
+   glVertex2i(k+8, -92);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(k-2, -84);
+   glVertex2i(k+4, -84);
+   glVertex2i(k+2, -92);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(k-1, -84);
+   glVertex2i(k+4, -84);
+   glVertex2i(k+2, -92);
+   glEnd();
+
+// 02 penguins
+   glColor3f(0, 0, 0);
+   circle(4, 4, k-1, -75);
+   glColor3f(0, 0, 0);
+   circle(4, 3.5, k-2, -77);
+   glColor3f(1, 1, 1);
+   circle(3.5, 3.5, k+4, -90);
+   circle(3.5, 3.5, k-2, -77);
+   glColor3f(0, 0, 0);
+   circle(1, 1, k-3, -76);
+   glColor3f(1, 0, 0);
+   circle(4.5, 2, k, -73);
+
+   glColor3f(1, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(k-4, -72);
+   glVertex2i(k+4, -76);
+   glVertex2i(k+4, -67);
+   glEnd();
 
 
 
 //........................................End............................................
 // boat penguins
-   glColor3f(1, 0, 0);
+   glColor3f(1, 1, 0);
    glBegin(GL_POLYGON);
-   glVertex2i(f+22, -95);
-   glVertex2i(f+22, -92);
-   glVertex2i(f+18, -95);
+   glVertex2i(f+4, -95);
+   glVertex2i(f+4, -92);
+   glVertex2i(f+8, -95);
    glEnd();
-   glColor3f(1, 0, 0);
+   glColor3f(1, 1, 0);
    glBegin(GL_POLYGON);
-   glVertex2i(f+20, -97);
-   glVertex2i(f+22, -95);
-   glVertex2i(f-10, -95);
-   glVertex2i(f-8, -97);
-   glEnd();
-   glColor3f(1, 0, 0);
-   glBegin(GL_POLYGON);
-   glVertex2i(f-6, -95);
-   glVertex2i(f-10, -92);
-   glVertex2i(f-10, -95);
+   glVertex2i(f, -95);
+   glVertex2i(f+4, -92);
+   glVertex2i(f+4, -95);
    glEnd();
 
 // 01 penguins
@@ -2551,6 +2669,310 @@ circle(6.5, 8.5, 60, -41);
    circle(1, 1, f-3, -76);
 //........................................End............................................
 
+//........................................End............................................
+// boat penguins
+   glColor3f(1, 1, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(m+4, -95);
+   glVertex2i(m+4, -92);
+   glVertex2i(m+8, -95);
+   glEnd();
+   glColor3f(1, 1, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(m, -95);
+   glVertex2i(m+4, -92);
+   glVertex2i(m+4, -95);
+   glEnd();
+
+// 03 penguins
+   glutPostRedisplay();
+   glColor3f(1, 1, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(m-4, -75);
+   glVertex2i(m-8, -77);
+   glVertex2i(m-4, -78);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(m+2, -76);
+   glVertex2i(m-4.5, -78);
+   glVertex2i(m-0.5, -86);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(m+2, -76);
+   glVertex2i(m-4, -78);
+   glVertex2i(m, -86);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(m+8, -86);
+   glVertex2i(m+3, -74);
+   glVertex2i(m, -86);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(m+16, -90);
+   glVertex2i(m+12, -84);
+   glVertex2i(m+6, -82);
+   glVertex2i(m+8, -86);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(m+12, -90);
+   glVertex2i(m+4, -84);
+   glVertex2i(m+4, -88);
+   glVertex2i(m+9, -93);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(m+16, -92);
+   glVertex2i(m+12, -90);
+   glVertex2i(m+9, -92);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(m+4, -84);
+   glVertex2i(m+1, -77);
+   glVertex2i(m, -86);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(m+4, -84);
+   glVertex2i(m-1, -84);
+   glVertex2i(m+8, -92);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(m-2, -84);
+   glVertex2i(m+4, -84);
+   glVertex2i(m+2, -92);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(m-1, -84);
+   glVertex2i(m+4, -84);
+   glVertex2i(m+2, -92);
+   glEnd();
+
+// 03 penguins
+   glColor3f(0, 0, 0);
+   circle(4, 4, m-1, -75);
+   glColor3f(0, 0, 0);
+   circle(4, 3.5, m-2, -77);
+   glColor3f(1, 1, 1);
+   circle(3.5, 3.5, m+4, -90);
+   circle(3.5, 3.5, m-2, -77);
+   glColor3f(0, 0, 0);
+   circle(1, 1, m-3, -76);
+
+
+//........................................End............................................
+// boat penguins
+   glColor3f(1, 1, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(n+4, -95);
+   glVertex2i(n+4, -92);
+   glVertex2i(n+8, -95);
+   glEnd();
+   glColor3f(1, 1, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(n, -95);
+   glVertex2i(n+4, -92);
+   glVertex2i(n+4, -95);
+   glEnd();
+
+// 04 penguins
+   glutPostRedisplay();
+   glColor3f(1, 1, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(n-4, -75);
+   glVertex2i(n-8, -77);
+   glVertex2i(n-4, -78);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(n+2, -76);
+   glVertex2i(n-4.5, -78);
+   glVertex2i(n-0.5, -86);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(n+2, -76);
+   glVertex2i(n-4, -78);
+   glVertex2i(n, -86);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(n+8, -86);
+   glVertex2i(n+3, -74);
+   glVertex2i(n, -86);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(n+16, -90);
+   glVertex2i(n+12, -84);
+   glVertex2i(n+6, -82);
+   glVertex2i(n+8, -86);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(n+12, -90);
+   glVertex2i(n+4, -84);
+   glVertex2i(n+4, -88);
+   glVertex2i(n+9, -93);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(n+16, -92);
+   glVertex2i(n+12, -90);
+   glVertex2i(n+9, -92);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(n+4, -84);
+   glVertex2i(n+1, -77);
+   glVertex2i(n, -86);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(n+4, -84);
+   glVertex2i(n-1, -84);
+   glVertex2i(n+8, -92);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(n-2, -84);
+   glVertex2i(n+4, -84);
+   glVertex2i(n+2, -92);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(n-1, -84);
+   glVertex2i(n+4, -84);
+   glVertex2i(n+2, -92);
+   glEnd();
+
+// 04 penguins
+   glColor3f(0, 0, 0);
+   circle(4, 4, n-1, -75);
+   glColor3f(0, 0, 0);
+   circle(4, 3.5, n-2, -77);
+   glColor3f(1, 1, 1);
+   circle(3.5, 3.5, n+4, -90);
+   circle(3.5, 3.5, n-2, -77);
+   glColor3f(0, 0, 0);
+   circle(1, 1, n-3, -76);
+//........................................End............................................
+//........................................End............................................
+// boat penguins
+   glColor3f(1, 1, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(l+4, -95);
+   glVertex2i(l+4, -92);
+   glVertex2i(l+8, -95);
+   glEnd();
+   glColor3f(1, 1, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(l, -95);
+   glVertex2i(l+4, -92);
+   glVertex2i(l+4, -95);
+   glEnd();
+
+// 05 penguins
+   glutPostRedisplay();
+   glColor3f(1, 1, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(l-4, -75);
+   glVertex2i(l-8, -77);
+   glVertex2i(l-4, -78);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(l+2, -76);
+   glVertex2i(l-4.5, -78);
+   glVertex2i(l-0.5, -86);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(l+2, -76);
+   glVertex2i(l-4, -78);
+   glVertex2i(l, -86);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(l+8, -86);
+   glVertex2i(l+3, -74);
+   glVertex2i(l, -86);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(l+16, -90);
+   glVertex2i(l+12, -84);
+   glVertex2i(l+6, -82);
+   glVertex2i(l+8, -86);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(l+12, -90);
+   glVertex2i(l+4, -84);
+   glVertex2i(l+4, -88);
+   glVertex2i(l+9, -93);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(l+16, -92);
+   glVertex2i(l+12, -90);
+   glVertex2i(l+9, -92);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(l+4, -84);
+   glVertex2i(l+1, -77);
+   glVertex2i(l, -86);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(l+4, -84);
+   glVertex2i(l-1, -84);
+   glVertex2i(l+8, -92);
+   glEnd();
+   glColor3f(0, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(l-2, -84);
+   glVertex2i(l+4, -84);
+   glVertex2i(l+2, -92);
+   glEnd();
+   glColor3f(1, 1, 1);
+   glBegin(GL_POLYGON);
+   glVertex2i(l-1, -84);
+   glVertex2i(l+4, -84);
+   glVertex2i(l+2, -92);
+   glEnd();
+
+// 05 penguins
+   glColor3f(0, 0, 0);
+   circle(4, 4, l-1, -75);
+   glColor3f(0, 0, 0);
+   circle(4, 3.5, l-2, -77);
+   glColor3f(1, 1, 1);
+   circle(3.5, 3.5, l+4, -90);
+   circle(3.5, 3.5, l-2, -77);
+   glColor3f(0, 0, 0);
+   circle(1, 1, l-3, -76);
+   glColor3f(1, 0, 0);
+   circle(4.5, 2, l, -73);
+
+   glColor3f(1, 0, 0);
+   glBegin(GL_POLYGON);
+   glVertex2i(l-4, -72);
+   glVertex2i(l+4, -76);
+   glVertex2i(l+4, -67);
+   glEnd();
+
+
+
+//........................................End............................................
 // 20 Snowfall
    glColor3f(1, 1, 1);
    glBegin(GL_POLYGON);
@@ -2973,16 +3395,10 @@ glColor3f(1, 1, 1);
 
 //........................................End............................................
 
-
-
     glColor3f(1, 1, 1);
     circle(28 ,4, 70, 40);
     circle(18 ,4, 50, 35);
-
     circle(18 ,4, 65, 38);
-
-
-
 
 //........................................End............................................
 // 20 Snowfall
@@ -2997,12 +3413,31 @@ if(d>=-100)
    else
      d=100;
 
-// Penguins
+// Penguins 01
 if(f>=-100)
      f=f-0.050;
    else
      f=100;
-
+// Penguins 02
+if(k>=-100)
+     k=k-0.050;
+   else
+     k=100;
+// Penguins 03
+if(m>=-100)
+     m=m-0.050;
+   else
+     m=100;
+// Penguins 04
+if(n>=-100)
+     n=n-0.050;
+   else
+     n=100;
+// Penguins 05
+if(l>=-80)
+     l=l-0.050;
+   else
+     l=100;
 // Car 01
       if(p<=100)
      p=p+0.055;
